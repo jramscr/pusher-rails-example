@@ -1,4 +1,4 @@
-This is a pusher-rails-example
+pusher-rails-example
 ====================
 
 Rails 4 chat example using pusher presence channels
