@@ -39,11 +39,7 @@
       'id="chat_widget_member_' + member.id + '">' + member.info.name + '</li>');
    });
 
-   nettuts_channel.bind('my_event', function(data) {
-             alert(data.message);
-           });
-
-   nettuts_channel.bind('Show Message', function(message) {
+   nettuts_channel.bind('Another Test', function(message) {
     alert(message);
    });
 
