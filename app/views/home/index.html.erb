@@ -1,7 +1,7 @@
  <div id="chat_widget_container">
     <div id="chat_widget_main_container">
        <div id="chat_widget_messages_container">
-          <div id="chat_widget_messages">
+          <div id="chat_widget_messages" style="width: 200px;height: 200px; overflow-y: auto;">
              chat messages go here
           </div>
        </div>
@@ -15,14 +15,14 @@
        <div id="chat_widget_input_container">
           <form method="post" id="chat_widget_form">
              <input type="text" id="chat_widget_input" />
-             <input type="submit" value="Chat" id="chat_widget_button" />
+             <input type="submit" value="Send" id="chat_widget_button" />
           </form>
        </div>
     </div>
  </div>
 <%= javascript_tag do %>
-  console.log("hey mae");
-  pusher = new Pusher('f56593b7930f439b27e6');
+  console.log("The channel is open and ready.");
+  pusher = new Pusher('820998e1acc55a7f3fa4');
   nettuts_channel = pusher.subscribe('presence-nettuts'); //join the presence-nettuts channel
 
   nettuts_channel.bind('pusher:subscription_succeeded', function(members) {
@@ -39,8 +39,13 @@
       'id="chat_widget_member_' + member.id + '">' + member.info.name + '</li>');
    });
 
+   nettuts_channel.bind('Show Message', function(message){
+   $('#chat_widget_messages').html(chat_widget_input.value);
+   alert(message);
+   });
+
   nettuts_channel.bind('pusher:member_removed', function(member) {
-    console.log("here");
+    console.log("A guy is removed from the chat.");
      $('#chat_widget_member_' + member.id).remove();
   });
 <% end %>
