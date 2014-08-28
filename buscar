@@ -1,0 +1,41 @@
+Available help:
+  ABORT                            COMMENT                          DEALLOCATE                       END
+  ALTER AGGREGATE                  COMMIT                           DECLARE                          EXECUTE
+  ALTER COLLATION                  COMMIT PREPARED                  DELETE                           EXECUTE DIRECT
+  ALTER CONVERSION                 COPY                             DISCARD                          EXPLAIN
+  ALTER DATABASE                   CREATE AGGREGATE                 DO                               FETCH
+  ALTER DEFAULT PRIVILEGES         CREATE BARRIER                   DROP AGGREGATE                   GRANT
+  ALTER DOMAIN                     CREATE CAST                      DROP CAST                        INSERT
+  ALTER EXTENSION                  CREATE COLLATION                 DROP COLLATION                   LISTEN
+  ALTER FOREIGN DATA WRAPPER       CREATE CONVERSION                DROP CONVERSION                  LOAD
+  ALTER FOREIGN TABLE              CREATE DATABASE                  DROP DATABASE                    LOCK
+  ALTER FUNCTION                   CREATE DOMAIN                    DROP DOMAIN                      MOVE
+  ALTER GROUP                      CREATE EXTENSION                 DROP EXTENSION                   NOTIFY
+  ALTER INDEX                      CREATE FOREIGN DATA WRAPPER      DROP FOREIGN DATA WRAPPER        PREPARE
+  ALTER LANGUAGE                   CREATE FOREIGN TABLE             DROP FOREIGN TABLE               PREPARE TRANSACTION
+  ALTER LARGE OBJECT               CREATE FUNCTION                  DROP FUNCTION                    REASSIGN OWNED
+  ALTER NODE                       CREATE GROUP                     DROP GROUP                       REINDEX
+  ALTER OPERATOR                   CREATE INDEX                     DROP INDEX                       RELEASE SAVEPOINT
+  ALTER OPERATOR CLASS             CREATE LANGUAGE                  DROP LANGUAGE                    RESET
+  ALTER OPERATOR FAMILY            CREATE NODE                      DROP NODE                        REVOKE
+  ALTER ROLE                       CREATE NODE GROUP                DROP NODE GROUP                  ROLLBACK
+  ALTER SCHEMA                     CREATE OPERATOR                  DROP OPERATOR                    ROLLBACK PREPARED
+  ALTER SEQUENCE                   CREATE OPERATOR CLASS            DROP OPERATOR CLASS              ROLLBACK TO SAVEPOINT
+  ALTER SERVER                     CREATE OPERATOR FAMILY           DROP OPERATOR FAMILY             SAVEPOINT
+  ALTER TABLE                      CREATE ROLE                      DROP OWNED                       SECURITY LABEL
+  ALTER TABLESPACE                 CREATE RULE                      DROP ROLE                        SELECT
+  ALTER TEXT SEARCH CONFIGURATION  CREATE SCHEMA                    DROP RULE                        SELECT INTO
+  ALTER TEXT SEARCH DICTIONARY     CREATE SEQUENCE                  DROP SCHEMA                      SET
+  ALTER TEXT SEARCH PARSER         CREATE SERVER                    DROP SEQUENCE                    SET CONSTRAINTS
+  ALTER TEXT SEARCH TEMPLATE       CREATE TABLE                     DROP SERVER                      SET ROLE
+  ALTER TRIGGER                    CREATE TABLE AS                  DROP TABLE                       SET SESSION AUTHORIZATION
+  ALTER TYPE                       CREATE TABLESPACE                DROP TABLESPACE                  SET TRANSACTION
+  ALTER USER                       CREATE TEXT SEARCH CONFIGURATION DROP TEXT SEARCH CONFIGURATION   SHOW
+  ALTER USER MAPPING               CREATE TEXT SEARCH DICTIONARY    DROP TEXT SEARCH DICTIONARY      START TRANSACTION
+  ALTER VIEW                       CREATE TEXT SEARCH PARSER        DROP TEXT SEARCH PARSER          TABLE
+  ANALYZE                          CREATE TEXT SEARCH TEMPLATE      DROP TEXT SEARCH TEMPLATE        TRUNCATE
+  BEGIN                            CREATE TRIGGER                   DROP TRIGGER                     UNLISTEN
+  CHECKPOINT                       CREATE TYPE                      DROP TYPE                        UPDATE
+  CLEAN CONNECTION                 CREATE USER                      DROP USER                        VACUUM
+  CLOSE                            CREATE USER MAPPING              DROP USER MAPPING                VALUES
+  CLUSTER                          CREATE VIEW                      DROP VIEW                        WITH
